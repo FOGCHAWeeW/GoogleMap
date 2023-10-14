@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         goMap=findViewById(R.id.goMap);
 
-        goMap.setOnClickListener(v -> {
+        goMap.setOnClickListener(v -> {//обычный метод onClick
             Intent intent = new Intent(MainActivity.this, MapsActivity.class);
             startActivity(intent);
         });
